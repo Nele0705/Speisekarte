@@ -1,0 +1,86 @@
+
+<html>
+<head>
+<title>Speisekarte</title>
+ <body bgcolor=silver>
+</head>
+<body>
+<h1>Speisekarte</h1>
+Sehr geehrte Mitarbeiter, auf dieser Seite finden Sie ein Suchformular wo sie ihre Bestellung für die Kantine angeben k&oumlnnen.
+<br />
+Bitte geben Sie neben Ihren Gerichten auch Ihren Namen und das jeweilige Datum an. Bei Sonderw&uumlnsche oder Fragen wenden Sie sich bitte an die Kantine.</em>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<form action="Speisekarte.php" method="post">
+<table border="2" bgcolor=white>
+<tbody>
+<tr>
+<td>Datum</td>
+<td>Hauptgericht</td>
+<td>Beilage</td>
+<td>Salat</td>
+<td>Nachspeise</td>
+<td>Vegetarisch</td>
+</tr>
+<tr>
+<td>
+<select name="Datum" size="5" multiple="multiple">
+<option value="27.01.18" selected="selected">27.01.18</option>
+<option value="28.01.18">28.01.18</option>
+<option value="29.01.18">29.01.18</option>
+<option value="30.01.18">30.01.18</option>
+<option value="31.01.18">31.01.18</option>
+</select>
+</td>
+
+<td>
+<select name="Hauptgericht" size="5" multiple="multiple">
+<option value="Rinderleber mit Pfanngem&uumlse" selected="selected">Rinderleber mit Pfanngem&uumlse</option>
+<option value="H&aumlhnchenschenkel">H&aumlhnchenschenkel</option>
+<option value="Gebratende Aubergine">Gebratende Aubergine</option>
+<option value="&Uumlberbackene Hacksteaks">&Uumlberbackene Hacksteaks</option>
+<option value="&Uuml�berbackene Zucchini">&Uumlberbackene Zucchini</option>
+</select>
+</td>
+<td>
+<select name="Beilage" size="5" multiple="multiple">
+<option value="Reis" selected="selected">Reis</option>
+<option value="Kartoffel">Kartoffel</option>
+<option value="S&uuml&szlig-Kartoffel">S&uuml&szlig-Kartoffel</option>
+<option value="Brot">Brot</option>
+<option value="Pommes">Pommes</option>
+</select>
+</td>
+<td>
+<select name="Salat" size="5" multiple="multiple">
+<option value="Karottensalat" selected="selected">Karottensalat </option>
+<option value="Kartoffelsalat">Kartoffelsalat</option>
+<option value="Eisbergsalat">Eisbergsalat</option>
+</select>
+</td>
+<td>
+<select name="Nachspeise" size="5" multiple="multiple">
+<option value="Vanille-Pudding" selected="selected">Vanille-Pudding</option>
+<option value="Rote Gr&uumltze mit Vanille Sauce">Rote Gr&uumltze mit Vanille Sauce</option>
+<option value="Eis mit Schokosauce">Eis mit Schokosauce</option>
+</select>
+</td>
+<td>
+<select name="Vegetarisch" size="5" multiple="multiple">
+<option value="JA" selected="selected">JA</option>
+<option value="NEIN">NEIN</option>
+</select>
+</td>
+
+</tbody>
+</table>
+<br />
+Vorname: <input type="text" name="vorname" /> Nachname: <input type="text" name="nachname" /><br />
+<input type="Submit" value="Speichern & Absenden" />
+</form>
+</body>
+</html>
